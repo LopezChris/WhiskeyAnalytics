@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/oauth-signature.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Alteryx Gallery API</h1>
+
+        
+        <p>
+            <label>API Location: </label><input id="apiLocation" type="text" value="http://localhost:80/gallery/api/v1">
+        </p>
+        <label>API Key: </label><input id="apiKey" type="text" value="8D7DD5DCF6A5FF5113f2ef0d4d5c74a17d16c47424e6521e4ab396a">
+        <label>API Secret: </label><input id="apiSecret" type="text" value="ab7d7f168635bb4b9762d53a141ef55b4a1055e1556b49666af17ce3f46ae90f">
+        
+        
+        <h2>Workflows</h2>
+        <h3>List</h3>
+            <button id="getSubscriptionWorkflows">Get Subscription Workflows</button>
+            <button id="getPublicWorkflows">Get Public Workflows</button>
+            <ul id="workflowList"></ul>
+        <h3>Execute</h3>
+            <label>Workflow ID: </label><input id="workflowId" type="text">
+            <button id="getAppInterface">Get Questions</button>
+            <form id="appInterface"></form><p/>
+            <button id="executeWorkflow">Execute Workflow</button>
+            <div id="jobIdDiv"></div>
+        <h3>Results</h3>
+            <label>Workflow ID: </label><input id="workflowIdForJobs" type="text">
+            <button id="getJobsByWorkflow">Get Jobs for Workflow</button>
+            <ul id="jobsByWorkflow"></ul>
+
+            <label>Job ID: </label><input id="jobId" type="text">
+            <button id="getJobStatus">Get Job Status</button>
+            <ul id="jobDetails"></ul>
+
+            <p>
+                <label>Output ID: </label><input id="outputId" type="text">
+                <label>Format: </label><input id="format" type="text">
+                <button id="getOutputFile">Download File</button>
+                <div id="outputError"></div>
+            </p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/alteryxGalleryAPI.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

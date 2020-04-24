@@ -1,0 +1,1 @@
+Retrieved from http://modernizr.com. License available at http://modernizr.com/license.

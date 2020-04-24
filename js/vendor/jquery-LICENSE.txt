@@ -1,0 +1,1 @@
+jQuery projects are released under the terms of the MIT license.

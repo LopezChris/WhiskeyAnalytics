@@ -1,0 +1,1 @@
+Retrieved from http://jquery.com. License available at http://jquery.org/license.

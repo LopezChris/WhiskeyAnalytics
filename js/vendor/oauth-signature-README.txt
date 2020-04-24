@@ -1,0 +1,1 @@
+Retrieved from https://github.com/bettiolo/oauth-signature-js on 12/9/2014
