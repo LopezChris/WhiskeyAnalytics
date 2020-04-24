@@ -1,8 +1,8 @@
 Gallery = function(apiLocation, apiKey, apiSecret) {
     //this.apiKey = apiKey;
-    this.apiKey = "8D7DD5DCF6A5FF5113f2ef0d4d5c74a17d16c47424e6521e4ab396a";
+    this.apiKey = "8D5E9BF2BA11F6Fc91b2bfc9b4b3f2a42476df88bf8bf1f09ec13c0";
     //this.apiSecret = apiSecret;
-    this.apiSecret = "ab7d7f168635bb4b9762d53a141ef55b4a1055e1556b49666af17ce3f46ae90f";
+    this.apiSecret = "aea3dc554808858cf5895c557d90ba2cbd622b698d3e18101ebe311bf6a15faf";
     //this.apiLocation = apiLocation;
     this.apiLocation = "http://localhost:80/gallery/api/v1";
 
